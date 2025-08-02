@@ -1,3 +1,7 @@
+# pid_reader_project/backend/ocr_reader.py
+import easyocr
+import cv2
+
 class OCRReader:
     def __init__(self, lang='en'):
         self.reader = easyocr.Reader([lang], gpu=False)
