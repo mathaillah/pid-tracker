@@ -3,8 +3,8 @@ from ultralytics import YOLO
 import cv2
 
 class InstrumentDetector:
-    def __init__(self, model_path):
-        self.model = YOLO(model_path)
+    def __init__(self, model_path='yolov8n.pt'):
+        self.model = YOLO(model_path)  
 
     def detect_components(self, image_path):
         results = self.model(image_path)
