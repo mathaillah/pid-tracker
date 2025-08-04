@@ -8,7 +8,7 @@ sys.path.append("../backend")
 from main import process_pid_image
 
 st.set_page_config(page_title="P&ID Reader App", layout="wide")
-st.title("🧠 P&ID Diagram Reader")
+st.title(" P&ID Diagram Reader")
 
 uploaded_file = st.file_uploader("Upload P&ID Diagram (PNG only)", type=["png"])
 
